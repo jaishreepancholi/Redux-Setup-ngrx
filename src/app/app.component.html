@@ -1,0 +1,32 @@
+<app-form-login></app-form-login>
+<!-- The content below is only a placeholder and can be replaced. -->
+<div style="text-align:center">
+    <form
+        [formGroup]="heroForm"
+        (submit)="onsubmit(heroForm.value);heroForm.reset()">
+        <div>
+
+            <div>
+                <label>Username</label>
+                <input
+                    type="text"
+                    formControlName="username">
+            </div>
+
+            <div>
+                <label floating>Password</label>
+                <input
+                    type="password"
+                    formControlName="password">
+            </div>
+
+        </div>
+        <button
+            ion-button
+            color="primary"
+            full>
+            ADD
+        </button>
+
+    </form>
+</div>
