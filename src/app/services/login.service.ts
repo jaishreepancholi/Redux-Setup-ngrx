@@ -33,6 +33,6 @@ export class LoginService {
 
 
   getData() {
-    return this.http.get("http://localhost:8000/response");
+    return this.http.get("http://localhost:8000/response"); 
 }
 }
