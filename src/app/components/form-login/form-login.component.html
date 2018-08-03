@@ -1,18 +1,20 @@
-<div style="text-align:center">
+<h2 class = "header">Login Form</h2>
+<div class="text-center">
   <form
+      class ="form-center"
       [formGroup]="heroForm"
       (submit)="onsubmit(heroForm.value);heroForm.reset()">
       <div>
 
-          <div>
-              <label>Username</label>
+          <div class ="form-label">
+              <label>Username:</label>
               <input
                   type="text"
                   formControlName="username">
           </div>
 
-          <div>
-              <label floating>Password</label>
+          <div class="form-label">
+              <label floating>Password:</label>
               <input
                   type="password"
                   formControlName="password">
@@ -20,6 +22,7 @@
 
       </div>
       <button
+          class = "button" 
           ion-button
           color="primary"
           full>
