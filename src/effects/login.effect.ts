@@ -27,10 +27,8 @@ export class LoginEffect {
         .ofType(loginAction.FORM_LOGIN)
         .map((action: loginAction.FormLoginData) => action.payload)
         .exhaustMap(url => {
-            debugger;
             return this.loginService.getData()
                 .mergeMap((data) => {
-                    debugger;
                     return [
                         new loginAction.FormLoginDataSuccess(data),
                     ];

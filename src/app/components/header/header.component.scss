@@ -1,0 +1,33 @@
+.fixed-head
+{
+   position: fixed;
+   top: 0px;
+   z-index: 999;
+   width: 100%;
+}
+
+.bg-color{
+   background-color: black!important;
+   opacity: 0.8;
+}
+.text-color-white{
+color:#ffffff !important;
+}
+a:hover{
+   color: #C00E76!important;
+}
+a:focus{
+   color: #C00E76!important;
+}
+a:active{
+   color: #C00E76!important;
+}
+.logo{
+   width: 50px;
+}
+.custom-toggler .navbar-toggler-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+ }
+ button:focus{
+   outline:  #C00E76!important;
+ }

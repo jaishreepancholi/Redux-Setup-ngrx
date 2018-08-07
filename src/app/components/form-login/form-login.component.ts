@@ -3,6 +3,8 @@ import { FormControl, FormGroup, FormBuilder } from '@angular/forms';
 import { Store } from '@ngrx/store';
 import { State } from '../../../reducers/login';
 import * as loginAction from '../../../actions/login';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-form-login',
@@ -14,7 +16,8 @@ export class FormLoginComponent implements OnInit {
   title = 'app';
   constructor(
     private store: Store<State>,
-    public fb: FormBuilder
+    public fb: FormBuilder,
+    private router: Router
   ) {
     this.createForm();
   }
@@ -30,10 +33,10 @@ export class FormLoginComponent implements OnInit {
   }
 
   onsubmit(value) {
-    debugger;
     this.store.dispatch(
       new loginAction.FormLoginData(value)
     );
+    this.router.navigate(['/dashboard']);
   }
 
 

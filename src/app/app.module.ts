@@ -5,7 +5,6 @@ import { EffectsModule } from '@ngrx/effects';
 import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
-
 import { HttpClientModule } from '@angular/common/http';
 
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
@@ -19,10 +18,20 @@ import { reducers, metaReducers } from '../reducers/index';
 
 // Effects
 import { LoginEffect } from '../effects/login.effect';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ContactusComponent } from './components/contactus/contactus.component';
+import { AboutusComponent } from './components/aboutus/aboutus.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
-    FormLoginComponent
+    FormLoginComponent,
+    DashboardComponent,
+    ContactusComponent,
+    AboutusComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
